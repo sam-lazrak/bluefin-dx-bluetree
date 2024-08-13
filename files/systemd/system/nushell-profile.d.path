@@ -1,0 +1,8 @@
+[Unit]
+Description=Keep your nushell system-wide configurations in logically separated files
+
+[Path]
+PathModified=/etc/nushell/profile.d
+
+[Install]
+WantedBy=multi-user.target

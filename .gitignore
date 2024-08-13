@@ -1,0 +1,4 @@
+.idea
+cosign.key
+/Containerfile
+build/

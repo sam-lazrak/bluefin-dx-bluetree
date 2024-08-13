@@ -1,0 +1,5 @@
+# https://github.com/noahdotpy/myublue/blob/main/modules/wallpapers/README.md
+type: wallpapers
+default:
+  wallpaper-light-dark:
+    - f40-bb-light.png + f40-bb-dark.png

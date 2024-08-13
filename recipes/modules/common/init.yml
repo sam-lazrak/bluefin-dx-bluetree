@@ -1,0 +1,25 @@
+modules:
+  - type: rpm-ostree
+    install: [nu]
+
+  - type: bling
+    install: [dconf-update-service]
+
+  - from-file: modules/common/packages.yml
+
+  - from-file: modules/common/files.yml
+  - from-file: modules/common/image-pinned-etcs.yml
+  - from-file: modules/common/gschema-overrides.yml
+  - from-file: modules/common/systemd.yml
+  - from-file: modules/common/justfiles.yml
+  - from-file: modules/common/chezfiles.yml
+
+  - from-file: modules/common/scripts.yml
+
+  - type: copy
+    from: ghcr.io/noahdotpy/idwt:main
+    src: /
+    dest: /
+
+  - type: update-image-info
+  - type: signing

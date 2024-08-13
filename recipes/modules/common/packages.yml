@@ -1,0 +1,19 @@
+# https://blue-build.org/reference/modules/rpm-ostree/
+type: rpm-ostree
+repos:
+  - https://copr.fedorainfracloud.org/coprs/johanh/timekpr-next/repo/fedora-%OS_VERSION%/johanh-timekpr-next-fedora-%OS_VERSION%.repo
+  - https://copr.fedorainfracloud.org/coprs/wojnilowicz/activitywatch/repo/fedora-%OS_VERSION%/wojnilowicz-activitywatch-fedora-%OS_VERSION%.repo
+install:
+  - ImageMagick
+  - aw-awatcher
+  - aw-server-rust
+  - aw-sync
+  - chromium
+  - cryfs
+  - lzip
+  - python3-aw-client
+  - python3-aw-core
+  - python3-aw-qt
+  - timekpr-next
+  - waydroid
+  - zsh

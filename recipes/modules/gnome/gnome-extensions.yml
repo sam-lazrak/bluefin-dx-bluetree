@@ -1,0 +1,38 @@
+# https://blue-build.org/reference/modules/gnome-extensions/
+modules:
+  - type: rpm-ostree
+    install: [gnome-shell-extension-gsconnect]
+  - type: gnome-extensions
+    install:
+      - "AATWS (Advanced Alt-Tab Window Switcher)"
+      - "Alphabetical App Grid"
+      - "AppIndicator and KStatusNotifierItem Support"
+      - "Battery Health Charging"
+      - "Bedtime Mode"
+      - "Bluetooth Battery Meter"
+      - 3193 # Blur my Shell
+      - "Caffeine"
+      - 779 # Clipboard Indicator
+      - "Quick Close in Overview"
+      - "Notifications Alert"
+      - "Sleep Through Notifications"
+      - "Compiz windows effect"
+      - "Custom Accent Colors"
+      - "Dash to Dock"
+      - "Desktop Icons NG (DING)"
+      - "GNOME Fuzzy App Search"
+      - "Hot Edge"
+      - "Just Perfection"
+      - "Live Captions Assistant"
+      - 36 # Lock Keys
+      - "Logo Menu"
+      - "OSD Volume Number"
+      - "Removable Drive Menu"
+      - "Search Light"
+      - 1194 # Show Desktop Button
+      - "Smile - complementary extension"
+      - "Tiling Assistant"
+      - "User Themes"
+      - "Wiggle"
+      - "Workspaces indicator by open apps"
+      - 5446 # [QSTweak] Quick Setting Tweaker

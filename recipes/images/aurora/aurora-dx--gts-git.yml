@@ -1,0 +1,11 @@
+name: aurora-dx
+description: This is my personal OS image based on ublue-os/aurora-dx (AMD/Intel).
+alt-tags: [gts-git]
+
+base-image: ghcr.io/ublue-os/aurora-dx
+image-version: gts
+
+modules:
+  - from-file: modules/common/init.yml
+  - from-file: modules/plasma/init.yml
+  - from-file: modules/devex/init.yml

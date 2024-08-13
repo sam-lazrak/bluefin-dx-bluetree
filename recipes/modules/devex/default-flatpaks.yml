@@ -1,0 +1,8 @@
+# https://blue-build.org/reference/modules/default-flatpaks/
+type: default-flatpaks
+notify: true
+system:
+  install:
+    - io.github.dvlv.boxbuddyrs
+    - org.gnome.Boxes
+    - com.github.marhkb.Pods

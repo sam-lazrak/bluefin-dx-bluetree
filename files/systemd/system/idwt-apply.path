@@ -1,0 +1,8 @@
+[Unit]
+Description=Run IDWT service when config changes
+
+[Path]
+PathModified=/etc/idwt/config.yml
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Homefiles Apply
+
+[Service]
+ExecStart=/usr/bin/bluebuild-homefiles-apply --mode skip
+Type=oneshot
+
+[Install]
+WantedBy=default.target

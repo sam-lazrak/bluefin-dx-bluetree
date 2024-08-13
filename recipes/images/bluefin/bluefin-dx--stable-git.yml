@@ -1,0 +1,11 @@
+name: bluefin-dx
+description: This is my personal OS image based on ublue-os/bluefin-dx (AMD/Intel).
+alt-tags: [stable-git]
+
+base-image: ghcr.io/ublue-os/bluefin-dx
+image-version: stable
+
+modules:
+  - from-file: modules/common/init.yml
+  - from-file: modules/gnome/init.yml
+  - from-file: modules/devex/init.yml

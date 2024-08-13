@@ -1,0 +1,1 @@
+alias image = rpm-ostree

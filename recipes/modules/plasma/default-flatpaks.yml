@@ -1,0 +1,41 @@
+# https://blue-build.org/reference/modules/default-flatpaks/
+type: default-flatpaks
+notify: true
+system:
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  repo-name: flathub-system
+  repo-title: "Flathub (System)"
+  install:
+    - com.github.rafostar.Clapper
+    - com.github.tchx84.Flatseal
+    - com.mattjakeman.ExtensionManager
+    - io.github.flattool.Warehouse
+    - io.gitlab.news_flash.NewsFlash
+    - io.missioncenter.MissionCenter
+    - it.mijorus.gearlever
+    - md.obsidian.Obsidian
+    - org.gimp.GIMP
+    - org.gnome.Calendar
+    - org.gnome.Characters
+    - org.gnome.Connections
+    - org.gnome.Geary
+    - org.gnome.Logs
+    - org.gnome.World.PikaBackup
+    - org.gnome.baobab
+    - org.gnome.font-viewer
+    - org.inkscape.Inkscape
+    - org.kde.gwenview
+    - org.kde.kasts
+    - org.kde.kcalc
+    - org.kde.kclock
+    - org.kde.kontact
+    - org.kde.kweather
+    - org.kde.kwrite
+    - org.kde.okular
+    - org.nickvision.tubeconverter
+    - org.pipewire.Helvum
+    - page.codeberg.libre_menu_editor.LibreMenuEditor
+user:
+  repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  repo-name: flathub-user
+  repo-title: "Flathub"

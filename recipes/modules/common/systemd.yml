@@ -1,0 +1,10 @@
+# https://blue-build.org/reference/modules/systemd/
+type: systemd
+system:
+  enabled:
+    - nushell-profile.d.path
+    - nushell-profile.d.service
+    - systemd-hosts.d.path
+    - systemd-hosts.d.service
+    - idwt-apply.path
+    - idwt-apply.service

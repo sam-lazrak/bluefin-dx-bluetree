@@ -1,0 +1,4 @@
+# https://blue-build.org/reference/modules/justfiles/
+type: justfiles
+validate: true
+include: [common]

@@ -1,0 +1,9 @@
+modules:
+  - type: script
+    scripts: [gnome/remove-gnome-classic.sh]
+
+  - from-file: modules/gnome/packages.yml
+  - from-file: modules/gnome/default-flatpaks.yml
+  - from-file: modules/gnome/files.yml
+  - from-file: modules/gnome/gnome-extensions.yml
+  - from-file: modules/gnome/wallpapers.yml

@@ -1,0 +1,11 @@
+# https://github.com/noahdotpy/myublue/blob/main/modules/files/README.md
+modules:
+- type: files
+  files:
+    - source: system/common/
+      destination: /
+- type: remove-files
+  files:
+    - /etc/profile.d/ublue-os-just.sh
+    - /usr/share/sounds/Yaru/stereo/desktop-login.oga
+    - /usr/share/sounds/Yaru/stereo/desktop-logoff.oga

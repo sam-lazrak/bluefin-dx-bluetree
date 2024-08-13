@@ -1,0 +1,7 @@
+# https://blue-build.org/reference/modules/script/
+type: script
+scripts:
+  - common/block-hosts.sh
+  - common/copy-plymouth-watermark.sh
+  - common/rename-ptyxis-to-terminal.sh
+  - common/initramfs.sh

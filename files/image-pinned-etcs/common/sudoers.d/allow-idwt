@@ -1,0 +1,2 @@
+ALL ALL=(ALL) NOPASSWD: /usr/bin/idwt apply
+%idwt-tightener ALL=(ALL) NOPASSWD: /usr/libexec/idwt/tighten-apply.nu

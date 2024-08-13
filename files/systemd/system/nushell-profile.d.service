@@ -1,0 +1,10 @@
+[Unit]
+Description=Keep your nushell system-wide configurations in logically separated files
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nu /usr/libexec/nushell-profile.d.nu
+
+[Install]
+RequiredBy=network-pre.target

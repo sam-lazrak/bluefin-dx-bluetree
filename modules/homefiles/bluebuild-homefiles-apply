@@ -1,0 +1,24 @@
+#!/usr/bin/env nu
+
+def main [
+  --mode = "prompt": string # prompt: interactively chezmoi apply, skip: never overwrite existing files, overwrite: always overwrite existing files
+] {
+  let entries = (ls -a /usr/share/bluebuild/chezfiles/ | get name)
+  
+  for entry in $entries {
+    let entry_name = echo $entry | path basename
+    let state_file = $"~/.local/state/bluebuild/chezfiles/($entry_name)/chezmoi-state"
+    
+    if $mode == "skip" {
+      yes "skip" | chezmoi apply --source $entry --persistent-state $state_file --no-tty --keep-going
+    } else if $mode == "overwrite" {
+      chezmoi apply --source $entry --persistent-state $state_file --force
+    } else if $mode == "prompt" {
+      chezmoi apply --source $entry --persistent-state $state_file
+    } else {
+      echo "--mode must be either `prompt`, `skip` or `overwrite`"
+      echo "see --help for more info"
+      exit 1
+    }
+  }
+}

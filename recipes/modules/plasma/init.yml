@@ -1,0 +1,2 @@
+modules:
+  - from-file: modules/gnome/default-flatpaks.yml

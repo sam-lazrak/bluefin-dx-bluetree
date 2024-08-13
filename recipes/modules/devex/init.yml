@@ -1,0 +1,2 @@
+modules:
+  - from-file: modules/devex/default-flatpaks.yml
